@@ -1,6 +1,6 @@
 
 NODE 3000:（中心节点，所有其他节点都会连接到这个节点，这个节点会在其他节点之间发送数据）
-export NODE_ID=3000
+  export NODE_ID=3000
 
 ./blockchain createwallet
 ./blockchain listaddresses
