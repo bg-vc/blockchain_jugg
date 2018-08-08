@@ -15,7 +15,7 @@ export NODE_ID=3000
 cp blockchain_3000.db blockchain_genesis.db 
 
 
-NODE 3001:（钱包节点，转账交易）
+NODE 3001:（钱包节点，转账交易） 
 export NODE_ID=3001
 ./blockchain createwallet
 ./blockchain listaddresses
