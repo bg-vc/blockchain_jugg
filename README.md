@@ -1,4 +1,5 @@
 
+```
 NODE 3000:（中心节点，所有其他节点都会连接到这个节点，这个节点会在其他节点之间发送数据）
 
 export NODE_ID=3000
@@ -16,8 +17,9 @@ export NODE_ID=3000
 ./blockchain getbalance -address 1DzSseaG5P6XfqACDT7dWUgeM9p9ghG2uA
 
 cp blockchain_3000.db blockchain_genesis.db 
+```
 
-
+```
 NODE 3001:（钱包节点，转账交易） 
 
 export NODE_ID=3001
@@ -31,8 +33,9 @@ export NODE_ID=3001
 16zkeVpwXYgbigKvxabaVtu5yUMv9f4Jb
 
 cp blockchain_genesis.db blockchain_3001.db
+```
 
-
+```
 NODE 3000:
 
 ./blockchain send -from 1DzSseaG5P6XfqACDT7dWUgeM9p9ghG2uA -to 1D1UPZa6mLbiUR1coqt6U4zRBxL4fSjkBC -amount 10 -mine
@@ -42,7 +45,9 @@ NODE 3000:
 ./blockchain getbalance -address 1DzSseaG5P6XfqACDT7dWUgeM9p9ghG2uA
 
 ./blockchain startnode
+```
 
+```
 NODE 3001:
 
 ./blockchain startnode
@@ -50,7 +55,9 @@ NODE 3001:
 ./blockchain getbalance -address 1D1UPZa6mLbiUR1coqt6U4zRBxL4fSjkBC
 
 ./blockchain getbalance -address 16zkeVpwXYgbigKvxabaVtu5yUMv9f4Jb
+```
 
+```
 NODE 3002:(挖矿节点，在内存池中存储新的交易，当有足够的交易时，打包挖出一个新块)
 
 export NODE_ID=3002
@@ -60,7 +67,8 @@ export NODE_ID=3002
 1479vPBbMG6k8PjJ75Bt1SikzVKefLj5A8
 
 ./blockchain startnode -miner 1479vPBbMG6k8PjJ75Bt1SikzVKefLj5A8
-
+```
+```
 NODE 3001:
 ./blockchain send -from 1D1UPZa6mLbiUR1coqt6U4zRBxL4fSjkBC -to 1479vPBbMG6k8PjJ75Bt1SikzVKefLj5A8 -amount 2
 
@@ -73,11 +81,10 @@ NODE 3001:
 ./blockchain getbalance -address 16zkeVpwXYgbigKvxabaVtu5yUMv9f4Jb
 
 ./blockchain printchain
-
-
+```
+```
 NODE 3002:
 ./blockchain getbalance -address 1479vPBbMG6k8PjJ75Bt1SikzVKefLj5A8
-
 
 =========== Block 000064b3c9d7e5431546e8bfdc3e36affd786d5be2ddbf3bc3936f51c566f985 ============
 
@@ -348,5 +355,6 @@ Transaction 8a26cde23205176e92938fd0133d726ba521307203e6693a305277e40ea5f2c7:
       Index:  0
       Value:  50
       Script: 42eb829367dbfdce3ce2c752e3afa2b6a2e494e0
+  ```
 
 
