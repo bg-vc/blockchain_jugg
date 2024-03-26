@@ -1,10 +1,9 @@
 package cli
 
-
 import (
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 	"log"
-	"blockchain_jugg/wallet"
 )
 
 func (cli *CLI) ListAddresses(nodeID string) {

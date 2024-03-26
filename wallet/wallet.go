@@ -1,16 +1,14 @@
 package wallet
 
-
 import (
 	"bytes"
 	"crypto/ecdsa"
 	"crypto/elliptic"
 	"crypto/rand"
 	"crypto/sha256"
-	"log"
-
+	"github.com/bg-vc/blockchain_jugg/crypto"
 	"golang.org/x/crypto/ripemd160"
-	"blockchain_jugg/crypto"
+	"log"
 )
 
 const version = byte(0x00)

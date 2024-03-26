@@ -1,12 +1,12 @@
 package core
 
-
 import (
 	"bytes"
 	"crypto/ecdsa"
 	"crypto/elliptic"
 	"crypto/rand"
 	"crypto/sha256"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 	"math/big"
 	"strings"
 
@@ -14,7 +14,6 @@ import (
 	"encoding/hex"
 	"fmt"
 	"log"
-	"blockchain_jugg/wallet"
 )
 
 const subsidy = 50

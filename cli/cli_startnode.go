@@ -1,11 +1,10 @@
 package cli
 
-
 import (
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/p2p"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 	"log"
-	"blockchain_jugg/wallet"
-	"blockchain_jugg/p2p"
 )
 
 func (cli *CLI) startNode(nodeID, minerAddress string) {

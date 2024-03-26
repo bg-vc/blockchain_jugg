@@ -1,10 +1,9 @@
 package cli
 
-
 import (
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/core"
 	"strconv"
-	"blockchain_jugg/core"
 )
 
 func (cli *CLI) PrintChain(nodeID string) {
@@ -31,4 +30,3 @@ func (cli *CLI) PrintChain(nodeID string) {
 		}
 	}
 }
-

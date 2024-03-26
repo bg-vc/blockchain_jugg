@@ -2,9 +2,8 @@ package crypto
 
 import (
 	"bytes"
+	"github.com/bg-vc/blockchain_jugg/utils"
 	"math/big"
-
-	"blockchain_jugg/utils"
 )
 
 var b58Alphabet = []byte("123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz")

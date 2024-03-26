@@ -2,7 +2,7 @@ package cli
 
 import (
 	"fmt"
-	"blockchain_jugg/wallet"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 )
 
 func (cli *CLI) CreateWallet(nodeID string) {
@@ -12,5 +12,3 @@ func (cli *CLI) CreateWallet(nodeID string) {
 
 	fmt.Printf("Your wallet address: %s\n", address)
 }
-
-

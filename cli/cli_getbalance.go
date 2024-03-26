@@ -1,12 +1,11 @@
 package cli
 
-
 import (
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/core"
+	"github.com/bg-vc/blockchain_jugg/crypto"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 	"log"
-	"blockchain_jugg/wallet"
-	"blockchain_jugg/crypto"
-	"blockchain_jugg/core"
 )
 
 func (cli *CLI) GetBalance(address, nodeID string) {
@@ -28,4 +27,3 @@ func (cli *CLI) GetBalance(address, nodeID string) {
 
 	fmt.Printf("Balance of '%s': %d\n", address, balance)
 }
-

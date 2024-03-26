@@ -1,16 +1,15 @@
 package p2p
 
-
 import (
 	"bytes"
 	"encoding/gob"
 	"encoding/hex"
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/core"
 	"io"
 	"io/ioutil"
 	"log"
 	"net"
-	"blockchain_jugg/core"
 )
 
 const protocol = "tcp"

@@ -1,13 +1,12 @@
 package core
 
-
 import (
 	"bytes"
 	"crypto/sha256"
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/utils"
 	"math"
 	"math/big"
-	"blockchain_jugg/utils"
 )
 
 var (

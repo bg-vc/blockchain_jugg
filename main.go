@@ -1,6 +1,6 @@
 package main
 
-import "blockchain_jugg/cli"
+import "github.com/bg-vc/blockchain_jugg/cli"
 
 func main() {
 	cli := cli.CLI{}

@@ -1,10 +1,8 @@
 package cli
 
-
-
 import (
 	"fmt"
-	"blockchain_jugg/core"
+	"github.com/bg-vc/blockchain_jugg/core"
 )
 
 func (cli *CLI) reindexUTXO(nodeID string) {

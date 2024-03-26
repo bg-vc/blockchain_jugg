@@ -1,11 +1,10 @@
 package cli
 
-
 import (
 	"fmt"
+	"github.com/bg-vc/blockchain_jugg/core"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 	"log"
-	"blockchain_jugg/wallet"
-	"blockchain_jugg/core"
 )
 
 func (cli *CLI) CreateBlockchain(address, nodeID string) {

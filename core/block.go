@@ -1,12 +1,11 @@
 package core
 
-
 import (
 	"bytes"
 	"encoding/gob"
+	"github.com/bg-vc/blockchain_jugg/merkle"
 	"log"
 	"time"
-	"blockchain_jugg/merkle"
 )
 
 // Block represents a block in the blockchain

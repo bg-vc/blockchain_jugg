@@ -2,8 +2,9 @@ package core
 
 import (
 	"bytes"
-	"blockchain_jugg/wallet"
+	"github.com/bg-vc/blockchain_jugg/wallet"
 )
+
 // TXInput represents a transaction input
 type TXInput struct {
 	Txid      []byte
@@ -18,4 +19,3 @@ func (in *TXInput) UsesKey(pubKeyHash []byte) bool {
 
 	return bytes.Compare(lockingHash, pubKeyHash) == 0
 }
-

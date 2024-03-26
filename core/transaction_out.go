@@ -1,18 +1,17 @@
 package core
 
-
 import (
 	"bytes"
 	"encoding/gob"
+	"github.com/bg-vc/blockchain_jugg/crypto"
 	"log"
-	"blockchain_jugg/crypto"
 )
 
 // TXOutput represents a transaction output
 type TXOutput struct {
-	Index   	int
-	Value      	int
-	PubKeyHash 	[]byte
+	Index      int
+	Value      int
+	PubKeyHash []byte
 }
 
 // Lock signs the output
@@ -65,4 +64,3 @@ func DeserializeOutputs(data []byte) TXOutputs {
 
 	return outputs
 }
-
